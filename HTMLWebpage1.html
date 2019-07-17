@@ -23,15 +23,10 @@
                         width:150px;
                         height:80px;
                     }
-                    .container {
-                            position: absolute;
-                            margin: 20px;
-                            width: auto;
-                    }
-
-                            /* The navbar */
+                   /* The navbar */
                     .topnav {
                             overflow: hidden;
+                            display:inline-block;
                             background-color: green;
                 
                     }
@@ -39,41 +34,43 @@
                             /* Navbar links */
                     .topnav a {
                             float: left;
+                            display:block;
                             color: #f2f2f2;
                             text-align: center;
                             padding: 20px 20px;
                             text-decoration: none;
                             font-size: 20px;
                     }
-                    .container a.active{
-                        background-color: pink;
-                    }
 
                     .topnav a:hover {
                             background-color: pink;
-                            color: grey;
+                            color: blue;
                     }
-                    body{
-                        background-repeat: no-repeat;
-                        align-self: center;
-    
+                    h3 {
+                        color:#E52B50;
+                        font-family:italic;
+                        font-size:50px;
+                    }
+                    #aldb{
+                        width:100px;
+                        height:80px;
                     }
                     
+        
                                         
             
               </style>
     </head>
-    <body background="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/kodaikanal-2836301.jpg?crop=0,96,2560,1408&wid=2000&hei=1100&scl=1.28">
-    <h2><marquee>Hello everyone welcome to frontend learning this is the website where you can learn creating websites in multiple resorces..</marquee></h2>
+    <body align = "center" background="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/kodaikanal-2836301.jpg?crop=0,96,2560,1408&wid=2000&hei=1100&scl=1.28">
+    <h2><marquee>Hello everyone welcome to frontend learning this is the website where you can learn creating websites in multiple resorces..</marquee></h2><br><br>
     
-    <div class="container">
-        <div class="topnav">
+    <div class="topnav" align = "center">
             <a class="active" href="https://www.frontend.com/">Home</a>
             <a href="https://www.w3schools.com/">w3schools</a>
             <a href="https://www.tutorialspoint.com/web_development_tutorials.htm">tutorialspoint</a>
             <a href="https://www.geeksforgeeks.org/web-technology/">geeksforgeeks</a>
-        </div>
-    </div>
+    </div><br><br><br>
+    <h3><b>Happy Learning..</b><img id = "aldb" src = "data:image/png;base64,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"></h3>
     </body>
 </html>
 
